@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Евгений Арапов](https://up.htmlacademy.ru/htmlcss/31/user/1691415).
-* Наставник:`[Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
+* Наставник:[Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
