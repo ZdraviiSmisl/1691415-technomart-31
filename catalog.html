@@ -136,81 +136,81 @@
         <div class="wrapper">
           <h2 class="main-container__filter-title">Фильтр:</h2>
 
-          <form class="main-container__form" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="main-container__form-fieldset">
-              <legend class="main-container__form-legend">Цена:</legend>
-              <input class="main-container__form-input input-range visually-hidden" type="range" min="0" max="40000"><br>
-              <span class="main-container__form-span">0</span> - <span class="main-container__form-span">30000</span>
+          <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="form-filter__fieldset">
+              <legend class="form-filter__legend">Цена:</legend>
+              <input class="form-filter__input input-range visually-hidden" type="range" min="0" max="40000"><br>
+              <span class="form-filter__span">0</span> - <span class="form-filter__span">30000</span>
             </fieldset>
 
-            <fieldset class="main-container__form-fieldset">
-              <legend class="main-container__form-legend">Производители:</legend>
-              <ul class="main-container__form-list">
-                <li class="main-container__form-item">
-                  <p class="main-container__form-p">
-                    <input class="main-container__form-input input__checkbox visually-hidden" type="checkbox" name="BOSCH"
+            <fieldset class="form-filter__fieldset">
+              <legend class="form-filter__legend">Производители:</legend>
+              <ul class="form-filter__list">
+                <li class="form-filter__item">
+                  <p class="form-filter__p">
+                    <input class="form-filter__input input__checkbox visually-hidden" type="checkbox" name="BOSCH"
                        id="bosch" checked>
-                    <div class="main-container__form-indicator indicator-checkbox"></div>
+                    <div class="form-filter__indicator indicator-checkbox"></div>
                     <label for="bosch">BOSCH</label>
                   </p>
                 </li>
 
-                <li class="main-container__form-item">
-                  <p class="main-container__form-p">
-                    <input class="main-container__form-input input-checkbox visually-hidden" type="checkbox"
+                <li class="form-filter__item">
+                  <p class="form-filter__p">
+                    <input class="form-filter__input input-checkbox visually-hidden" type="checkbox"
                        name="Interscol" id="interscol">
-                    <div class="main-container__form-indicator indicator-checkbox"></div>
+                    <div class="form-filter__indicator indicator-checkbox"></div>
                     <label for="interscol">ИНТЕРСКОЛ</label>
                   </p>
                 </li>
 
-                <li class="main-container__form-item">
-                  <p class="main-container__form-p">
-                    <input class="main-container__form-input input-checkbox visually-hidden" type="checkbox" name="MAKITA"
+                <li class="form-filter__item">
+                  <p class="form-filter__p">
+                    <input class="form-filter__input input-checkbox visually-hidden" type="checkbox" name="MAKITA"
                        id="makita" checked>
-                    <div class="main-container__form-indicator indicator-checkbox"></div>
+                    <div class="form-filter__indicator indicator-checkbox"></div>
                     <label for="makita">MAKITA</label>
                   </p>
                 </li>
 
-                <li class="main-container__form-item">
-                  <p class="main-container__form-p">
-                    <input class="main-container__form-input input-checkbox visually-hidden" type="checkbox" name="DEWALT"
+                <li class="form-filter__item">
+                  <p class="form-filter__p">
+                    <input class="form-filter__input input-checkbox visually-hidden" type="checkbox" name="DEWALT"
                        id="dewalt">
-                    <div class="main-container__form-indicator indicator-checkbox"></div>
+                    <div class="form-filter__indicator indicator-checkbox"></div>
                     <label for="dewalt">DEWALT</label>
                   </p>
                 </li>
 
-                <li class="main-container__form-item">
-                  <p class="main-container__form-p">
-                    <input class="main-container__form-input input-checkbox visually-hidden" type="checkbox" name="HITACHI"
+                <li class="form-filter__item">
+                  <p class="form-filter__p">
+                    <input class="form-filter__input input-checkbox visually-hidden" type="checkbox" name="HITACHI"
                        id="hitachi">
-                    <div class="main-container__form-indicator indicator-checkbox"></div>
+                    <div class="form-filter__indicator indicator-checkbox"></div>
                     <label for="hitachi">HITACHI</label>
                   </p>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="main-container__form-fieldset">
-              <legend class="main-container__form-legend">Питание:</legend>
-              <p class="main-container__form-p">
-                <input class="main-container__form-input input-radio visually-hidden" type="radio" name="product-group"
+            <fieldset class="form-filter__fieldset">
+              <legend class="form-filter__legend">Питание:</legend>
+              <p class="form-filter__p">
+                <input class="form-filter__input input-radio visually-hidden" type="radio" name="product-group"
                    id="battery">
-                <div class="main-container__form-indicator indicator-radio"></div>
+                <div class="form-filter__indicator indicator-radio"></div>
                 <label for="battery">АККУМУЛЯТОРНЫЕ</label>
               </p>
 
-              <p class="main-container__form-p">
-                <input class="main-container__form-input input-radio visually-hidden" type="radio" name="product-group"
+              <p class="form-filter__p">
+                <input class="form-filter__input input-radio visually-hidden" type="radio" name="product-group"
                    id="mains_power" checked>
-                <div class="main-container__form-indicator indicator-radio"></div>
+                <div class="form-filter__indicator indicator-radio"></div>
                 <label for="mains_power">СЕТЕВЫЕ</label>
               </p>
             </fieldset>
 
-            <button class="main-container__form-btn" type="submit">ПОКАЗАТЬ</button>
+            <button class="form-filter__btn" type="submit">ПОКАЗАТЬ</button>
           </form>
         </div>
       </section>
@@ -379,9 +379,7 @@
           </p>
 
           <button class="modal-addBasket__btn" type="button">Продрожить покупки</button>
-          <button class="modal-addBasket__close" type="button">
-            <img class="modal-addBasket__close-img" src="#" alt="Закрыть">
-          </button>
+          <button class="modal-addBasket__close" type="button">Закрыть</button>
         </div>
       </section>
     </main>
@@ -401,36 +399,37 @@
             <span class="main-footer__contacts-tel">+7 800 555-86-28</span>
           </p>
 
-          <ul class="main-footer__menu1">
-            <li class="main-footer__menu1-item">
-              <a class="main-footer__menu1-link" href="#">Компания</a>
+
+          <ul class="menu-top">
+            <li class="menu-top__item">
+              <a class="menu-top__link" href="#">Компания</a>
             </li>
-            <li class="main-footer__menu1-item">
-              <a class="main-footer__menu1-link" href="#">Новости</a>
+            <li class="menu-top__item">
+              <a class="menu-top__link" href="#">Новости</a>
             </li>
-            <li class="main-footer__menu1-item">
-              <a class="main-footer__menu1-link">Каталог</a>
+            <li class="menu-top__item">
+              <a class="menu-top__link">Каталог</a>
             </li>
-            <li class="main-footer__menu1-item">
-              <a class="main-footer__menu1-link" href="#">Доставка</a>
+            <li class="menu-top__item">
+              <a class="menu-top__link" href="#">Доставка</a>
             </li>
-            <li class="main-footer__menu1-item">
-              <a class="main-footer__menu1-link" href="#">Контакты</a>
+            <li class="menu-top__item">
+              <a class="menu-top__link" href="#">Контакты</a>
             </li>
           </ul>
 
-          <ul class="main-footer__menu2">
-            <li class="main-footer__menu2-item">
-              <a class="main-footer__menu2-link" href="#">Материалы</a>
+          <ul class="menu-bottom">
+            <li class="menu-bottom__item">
+              <a class="menu-bottom__link" href="#">Материалы</a>
             </li>
-            <li class="main-footer__menu2-item">
-              <a class="main-footer__menu2-link" href="#">Техника</a>
+            <li class="menu-bottom__item">
+              <a class="menu-bottom__link" href="#">Техника</a>
             </li>
-            <li class="main-footer__menu2-item">
-              <a class="main-footer__menu2-link" href="#">Инструмент</a>
+            <li class="menu-bottom__item">
+              <a class="menu-bottom__link" href="#">Инструмент</a>
             </li>
-            <li class="main-footer__menu2-item">
-              <a class="main-footer__menu2-link" href="#">Спецпредложения</a>
+            <li class="menu-bottom__item">
+              <a class="menu-bottom__link" href="#">Спецпредложения</a>
             </li>
           </ul>
         </div>
