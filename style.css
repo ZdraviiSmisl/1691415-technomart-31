@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "PT Sans";
+  src:local('PT Sans'),
+  url("fonts/ptsans.woff2") format("woff2"),
+  url("fonts/ptsans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: local('PT Sans'),
+  url("fonts/ptsansbold.woff2")format("woff2"),
+  url("fonts/ptsansbold.woff")format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+  url("fonts/cuprum.woff2")format('woff2'),
+  url("fonts/cuprum.woff")format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+  url("fonts/cuprumitalic.woff2")format('woff2'),
+  url("fonts/cuprumitalic.woff")format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+  url("fonts/cuprumbold.woff2")format('woff2'),
+  url("fonts/cuprumbold.woff")format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Cuprum';
+  src: local('Cuprum'),
+  url("fonts/cuprumbolditalic.woff2")format('woff2'),
+  url("fonts/cuprumbolditalic.woff")format("woff");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root{
+--basic-green:#63A63E;
+--basic-background:#f1f5f7;
+--basic-red:#ee3643;
+--wisper:#eaeaea;
+--wisper2:#E5E5E5;
+--basic-blue:#32425C;
+--basic-black:#000000;
+--basic-extra-grey2:#C5C5C5;
+--basic-light-grey:#c4c4c4;
+--basic-extra-white:#F7F3EC;
+--basic-white:#ffffff;
+--basic-white2:#f3f7f9;
+--basic-extra-yellow:#FFD180;
+--basic-midnight: #212A3A;
+--basic-dark-blue: #293449;
+--basic-extra-grey:#C1C6CE;
+--special-yellow:#FFBF47;
+--basic-light-green:#8ED78F;
+--basic-violet:#DC91D8;
+--picton-blue:#3BBCE3;
+--success:#5FBB2D;
+--extra-blue:#161D29;
+--error:#BA2732;
+--basic-extra-green:#61D322;
+--basic-grey:#3D546F;
+--solitude:#B7BFC8;
+--extra-midnight:#1D2739;
+--basic-dark-gey: #A9A9A9;
+--dark-red:#CA2C37;
+--dark-green:#518534;
+--extra-dark-grey:#B5B5B5
+}
