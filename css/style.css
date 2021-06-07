@@ -62,7 +62,7 @@
 :root{
 --basic-green:#63A63E;
 --basic-background:#f1f5f7;
---basic-red:#ee3643;
+--basic-red:#EE3643;
 --wisper:#eaeaea;
 --wisper2:#E5E5E5;
 --basic-blue:#32425C;
@@ -90,5 +90,15 @@
 --basic-dark-gey: #A9A9A9;
 --dark-red:#CA2C37;
 --dark-green:#518534;
---extra-dark-grey:#B5B5B5
+--extra-dark-grey:#B5B5B5;
+}
+
+
+
+
+
+
+
+body{
+  color:var(--basic-red);
 }
