@@ -28,17 +28,19 @@
             <input class="main-header__search-input" type="search" name="search" placeholder="Поиск">
           </form>
 
-          <p class="main-header__bookmarks">
-            <a class="main-header__bookmarks-link" href="#">Закладки</a>
-          </p>
+          <ul class="main-header__menu-list">
+            <li class="main-header__menu-item">
+              <a class="main-header__bookmarks-link" href="#">Закладки</a>
+            </li>
 
-          <p class="main-header__basket">
-            <a class="main-header__basket-link" href="#">Корзина</a>
-          </p>
+            <li class="main-header__menu-item">
+              <a class="main-header__basket-link" href="#">Корзина</a>
+            </li>
 
-          <p class="main-header__order">
-            <a class="main-header__order-link" href="#">Офорить заказ</a>
-          </p>
+            <li class="main-header__menu-item">
+              <a class="main-header__order-link" href="#">Офорить заказ</a>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -96,6 +98,7 @@
           <h2 class="visually-hidden">Меню</h2>
 
           <ul class="menu__list">
+
             <li class="menu__item">
               <p class="menu__materials">
               <h3 class="menu__title">Материалы</h3>
@@ -138,7 +141,7 @@
               <a class="slider__link" href="catalog.html">Открыть каталог</a>
             </div>
 
-            <div class="slider__slide--2">
+            <div class="slider__slide--2 ">
               <h3 class="slider__title">Дрели</h3>
               <p class="slider__text">Соседям на радость!</p>
               <a class="slider__link" href="catalog.html">Открыть каталог </a>
@@ -317,62 +320,56 @@
 
 
       <section class="services">
-        <div class="services__top">
-          <div class="wrapper">
-            <h2 class="services__title">Сервисы</h2>
 
-            <p class="services__text">Хороший интернет магазин отличается от плохого не только ценами!</p>
-            <p class="services__text">Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.</p>
+        <h2 class="services__title">Сервисы</h2>
+
+        <p class="services__text">Хороший интернет магазин отличается от плохого не только ценами!
+        Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
+        </p>
+
+
+        <nav class="services__tabs">
+          <a href="#tab_01" class="services__tabs-item">Доставка</a>
+          <a href="#tab_02" class="services__tabs-item">Гарантия</a>
+          <a href="#tab_03" class="services__tabs-item">Кредит</a>
+        </nav>
+
+        <div class="services-tabs">
+          <div id="tab_01" class="services-tabs__block">
+            <h2 class="services-tabs__title">Доставка</h2>
+            <p class="services-tabs__text">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем
+              поднимая его на ваш этаж!
+            </p>
+            <img class="services-tabs__img" src="img/backgrounds/delivery.png" alt="Серого цвета грузовик с крытым синим кузовом" width="468" height="261">
           </div>
-        </div>
 
-        <div class="services__bottom">
-          <div class="wrapper">
+          <div id="tab_02" class="services-tabs__block">
+            <h2 class="services-tabs__title">Гарантия</h2>
+            <p class="services-tabs__text">Если купленый у нас товар поломается или заискрит,
+              а так же в случае пожара,спровоцированного его
+              возгоранием, вы всегда можети быть уверены в нашей
+              гарантии. Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.
+            </p>
+            <img class="services-tabs__img" src="img/backgrounds/guarantee.png" alt="Золотая медаль с красными лентами,гравировка -100%" width="389" height="283">
+          </div>
 
-            <nav class="services__tabs">
-              <a href="#tab_01" class="services__tabs-item">Доставка</a>
-              <a href="#tab_02" class="services__tabs-item">Гарантия</a>
-              <a href="#tab_03" class="services__tabs-item">Кредит</a>
-            </nav>
+          <div id="tab_03" class="services-tabs__block">
+            <h2 class="services-tabs__title">Кредит</h2>
+            <p class="services-tabs__text">Залезть в долговую яму стало проще!
+              Кредитные консультанты придут вам на помощь.
+            </p>
+            <a class="services-tabs__link" href="">Отправить заявку</a>
 
-            <div class="services-tabs">
-              <div id="tab_01" class="services-tabs__block">
-                <h2 class="services-tabs__title">Доставка</h2>
-                <p class="services-tabs__text">Мы с удовольствием доставим ваш товар прямо
-                  к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем
-                  поднимая его на ваш этаж!
-                </p>
-                <img class="services-tabs__img" src="img/backgrounds/delivery.png" alt="Серого цвета грузовик с крытым синим кузовом" width="468" height="261">
-              </div>
-
-              <div id="tab_02" class="services-tabs__block">
-                <h2 class="services-tabs__title">Гарантия</h2>
-                <p class="services-tabs__text">Если купленый у нас товар поломается или заискрит,
-                  а так же в случае пожара,спровоцированного его
-                  возгоранием, вы всегда можети быть уверены в нашей
-                  гарантии. Мы обменяем сгоревший товар на новый.
-                  Дом уж восстановите как-нибудь сами.
-                </p>
-                <img class="services-tabs__img" src="img/backgrounds/guarantee.png" alt="Золотая медаль с красными лентами,гравировка -100%" width="389" height="283">
-              </div>
-
-              <div id="tab_03" class="services-tabs__block">
-                <h2 class="services-tabs__title">Кредит</h2>
-                <p class="services-tabs__text">Залезть в долговую яму стало проще!
-                  Кредитные консультанты придут вам на помощь.
-                </p>
-                <a class="services-tabs__link" href="">Отправить заявку</a>
-
-                <img class="services-tabs__img" src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
-              </div>
-            </div>
+            <img class="services-tabs__img" src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
           </div>
         </div>
       </section>
 
       <section class="company-info">
-        <div class="wrapper">
+        <div class="wrapper-company">
           <div class="company-info__block">
             <h2 class="company-info__title">Компания &laquo;Техномарт&raquo;</h2>
             <p class="company-info__slogan">Настоящий мужской шоппинг начинаеться здесь!Огромый выбор товаров для
