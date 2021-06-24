@@ -25,22 +25,21 @@
 
           <form class="main-header__search-form" action="#" method="get">
             <label class="visually-hidden">Поиск:</label>
-            <input class="main-header__search-input" type="search" name="search" placeholder="Поиск">
+            <input class="main-header__search-input" type="search" name="search" placeholder="Поиск:">
           </form>
 
-          <ul class="main-header__menu-list">
-            <li class="main-header__menu-item">
-              <a class="main-header__bookmarks-link" href="#">Закладки</a>
-            </li>
+            <p class="main-header__menu-item">
+              <a class="main-header__bookmarks-link main-header__link--top" href="#">Закладки</a>
+            </p>
 
-            <li class="main-header__menu-item">
-              <a class="main-header__basket-link" href="#">Корзина</a>
-            </li>
+            <p class="main-header__menu-item">
+              <a class="main-header__basket-link main-header__link--top" href="#">Корзина</a>
+            </p>
 
-            <li class="main-header__menu-item">
+            <p class="main-header__menu-item">
               <a class="main-header__order-link" href="#">Офорить заказ</a>
-            </li>
-          </ul>
+            </p>
+
         </div>
       </div>
 
@@ -135,13 +134,13 @@
             </li>
           </ul>
           <div class="slider">
-            <div class="slider__slide--1">
+            <div class=" slider__slide slider__slide--1">
               <h3 class="slider__title">Перфораторы</h3>
               <p class="slider__text">Настоящие мужские игрушки</p>
               <a class="slider__link" href="catalog.html">Открыть каталог</a>
             </div>
 
-            <div class="slider__slide--2 ">
+            <div class=" slider__slide slider__slide--2 ">
               <h3 class="slider__title">Дрели</h3>
               <p class="slider__text">Соседям на радость!</p>
               <a class="slider__link" href="catalog.html">Открыть каталог </a>
@@ -151,230 +150,217 @@
       </section>
 
       <section class="goods">
-        <div class="goods__top">
-          <div class="wrapper">
-            <p class="goods__popular">
-              <h2 class="goods__title">Популярные товары:</h2>
-              <a class="goods__link" href="#">Все популярные товары</a>
-            </p>
-          </div>
-        </div>
+        <div class="wrapper">
+          <h2 class="goods__title">Популярные товары:</h2>
+          <a class="goods__link" href="#">Все популярные товары</a>
+          <ul class="goods__list">
+            <li class="goods__item">
+              <article class="card-good__card">
+                <a class="card-good__link" href="#">
+                  <img class="card-good__img" src="img/goods/bfg-9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="144" height="128">
+                </a>
+                <div class="visually-hidden">
+                  <a class="card-good__buy" href="#" >Купить</a>
+                  <a class="card-good__in-bookmark" href="#">В Закладки</a>
+                </div>
+                <h3 class="card-good__titleGood">Перфоратор Bosch
+                  bfg 9000</h3>
+               <p class='card-good__price'>32500р.<span class="visually-hidden">рублей</span></p>
+                <a class="card-good__link-bay" href="#">
+                  25500р.<span class="visually-hidden">рублей</span>
+                </a>
+              </article>
+            </li>
 
-        <div class="goods__bottom">
-          <div class="wrapper">
-            <ul class="goods__list">
-              <li class="goods__item">
-                <article class="card-good__card">
-                  <a class="card-good__link" href="#">
-                    <img class="card-good__img" src="img/goods/bfg-9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="144" height="128">
-                  </a>
-                  <div class="visually-hidden">
-                    <a class="card-good__buy" href="#" >Купить</a>
-                    <a class="card-good__in-bookmark" href="#">В Закладки</a>
-                  </div>
-                  <h3 class="card-good__titleGood">Перфоратор Bosch
-                    bfg 9000</h3>
-                 <p class='card-good__price'>32500р.<span class="visually-hidden">рублей</span></p>
-                  <a class="card-good__link-bay" href="#">
-                    25500р.<span class="visually-hidden">рублей</span>
-                  </a>
-                </article>
-              </li>
+            <li class="goods__item">
+              <article class="card-good__card">
+                <a class="card-good__link" href="#">
+                  <img class="card-good__img" src="img/goods/bfg-3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
+                       width="127" height="112">
+                </a>
+                <h3 class="card-good__title">Перфоратор bosch
+                  bfg 3000</h3>
+                 <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
+                <a class="card-good__link-bay">
+                  15500р.<span class="visually-hidden">рублей</span>
+                </a>
+              </article>
+            </li>
 
-              <li class="goods__item">
-                <article class="card-good__card">
-                  <a class="card-good__link" href="#">
-                    <img class="card-good__img" src="img/goods/bfg-3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
-                         width="127" height="112">
-                  </a>
-                  <h3 class="card-good__title">Перфоратор bosch
-                    bfg 3000</h3>
-                   <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
-                  <a class="card-good__link-bay">
-                    15500р.<span class="visually-hidden">рублей</span>
-                  </a>
-                </article>
-              </li>
+            <li class="goods__item">
+              <article class="card-good__card">
+                <a class="card-good__link" href="#">
+                  <img class="card-good__img" src="img/goods/bfg-6000.jpg" alt="Перфоратор Bosch bfg 6000,синий,беспроводной"
+                       width="144" height="128">
+                </a>
+                <h3 class="card-good__title">Перфоратор Bosch
+                  bfg 6000</h3>
+                 <p class='card-good__price'>30500р.<span class="visually-hidden">рублей</span></p>
+                <a class="card-good__link-bay" href="#">
+                  22500р.<span class="visually-hidden">рублей</span>
+                </a>
+              </article>
+            </li>
 
-              <li class="goods__item">
-                <article class="card-good__card">
-                  <a class="card-good__link" href="#">
-                    <img class="card-good__img" src="img/goods/bfg-6000.jpg" alt="Перфоратор Bosch bfg 6000,синий,беспроводной"
-                         width="144" height="128">
-                  </a>
-                  <h3 class="card-good__title">Перфоратор Bosch
-                    bfg 6000</h3>
-                   <p class='card-good__price'>30500р.<span class="visually-hidden">рублей</span></p>
-                  <a class="card-good__link-bay" href="#">
-                    22500р.<span class="visually-hidden">рублей</span>
-                  </a>
-                </article>
-              </li>
-
-              <li class="goods__item">
-                <article class="card-good__card">
-                  <a class="card-good__link" href="#">
-                    <img class="card-good__img" src="img/goods/bfg-2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
-                         width="127" height="112">
-                  </a>
-                  <h3 class="card-good__title">Перфоратор Bosch
-                    bfg 2000</h3>
-                   <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
-                  <a class="card-good__link-bay" href="#">
-                    12500р.<span class="visually-hidden">рублей</span>
-                  </a>
-                </article>
-              </li>
-            </ul>
-          </div>
+            <li class="goods__item">
+              <article class="card-good__card">
+                <a class="card-good__link" href="#">
+                  <img class="card-good__img" src="img/goods/bfg-2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
+                       width="127" height="112">
+                </a>
+                <h3 class="card-good__title">Перфоратор Bosch
+                  bfg 2000</h3>
+                 <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
+                <a class="card-good__link-bay" href="#">
+                  12500р.<span class="visually-hidden">рублей</span>
+                </a>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
 
       <section class="brands">
-        <div class="brands__top">
-          <div class="wrapper">
-            <h2 class="brands__title">Популярные производители:</h2>
-            <a class="brands__link" href="#">Все производители</a>
-          </div>
-        </div>
+        <div class="wrapper">
+          <h2 class="brands__title">Популярные производители:</h2>
+          <a class="brands__link" href="#">Все производители</a>
+          <ul class="brands__list">
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Bosch</h3>
+                <a class="card-brand__link" href="#" style="width: 200px;height: 90px">
+                  <img class="card-brand__img"  src="img/brands/bosch.png" alt=" логотип Bosch,красные буквы на сером фоне" width="126" height="37">
+                </a>
+              </article>
+            </li>
 
-        <div class="brands__bottom">
-          <div class="wrapper">
-            <ul class="brands__list">
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Bosch</h3>
-                  <a class="card-brand__link" href="#" style="width: 200px;height: 90px">
-                    <img class="card-brand__img"  src="img/brands/bosch.png" alt=" логотип Bosch,красные буквы на сером фоне" width="126" height="37">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Makita</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/makita.png" alt="логотип Makita белые буквы на красном фоне" width="123" height="40">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Makita</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/makita.png" alt="логотип Makita белые буквы на красном фоне" width="123" height="40">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Dewalt</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/dewalt.png" alt="логотип Dewalt жёлтые буквы на чёрном фоне" width="146"  height="44">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Dewalt</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/dewalt.png" alt="логотип Dewalt жёлтые буквы на чёрном фоне" width="146"  height="44">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Интерскол</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/Interscol.png" alt="логотип Интерскол красные буквы на белом фоне" width="200" height="76">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Интерскол</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/Interscol.png" alt="логотип Интерскол красные буквы на белом фоне" width="200" height="76">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Hitachi</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/hitachi.png" alt="логотип Hitachi красные буквы на белом фоне" width="169" height="31">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Hitachi</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/hitachi.png" alt="логотип Hitachi красные буквы на белом фоне" width="169" height="31">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Lg</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/lg.png" alt="логотип Lg" width="121" height="73">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Lg</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/lg.png" alt="логотип Lg" width="121" height="73">
-                  </a>
-                </article>
-              </li>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Aeg</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/aeg.png" alt="логотип Aeg" width="151" height="98">
+                </a>
+              </article>
+            </li>
 
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Aeg</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/aeg.png" alt="логотип Aeg" width="151" height="98">
-                  </a>
-                </article>
-              </li>
-
-              <li class="brands__item">
-                <article class="card-brand">
-                  <h3 class="visually-hidden">Metabo</h3>
-                  <a class="card-brand__link" href="#">
-                    <img class="card-brand__img" src="img/brands/metabo.png" alt="логотип Metabo" width="206" height="73">
-                  </a>
-                </article>
-              </li>
-            </ul>
-          </div>
+            <li class="brands__item">
+              <article class="card-brand">
+                <h3 class="visually-hidden">Metabo</h3>
+                <a class="card-brand__link" href="#">
+                  <img class="card-brand__img" src="img/brands/metabo.png" alt="логотип Metabo" width="206" height="73">
+                </a>
+              </article>
+            </li>
+          </ul>
         </div>
       </section>
 
 
       <section class="services">
+        <div class="wrapper">
+          <h2 class="services__title">Сервисы</h2>
 
-        <h2 class="services__title">Сервисы</h2>
-
-        <p class="services__text">Хороший интернет магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
-        </p>
+          <p class="services__text">Хороший интернет магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
+          </p>
 
 
-        <nav class="services__tabs">
-          <a href="#tab_01" class="services__tabs-item">Доставка</a>
-          <a href="#tab_02" class="services__tabs-item">Гарантия</a>
-          <a href="#tab_03" class="services__tabs-item">Кредит</a>
-        </nav>
+          <nav class="services__tabs">
+            <a href="#tab_01" class="services__tabs-item">Доставка</a>
+            <a href="#tab_02" class="services__tabs-item">Гарантия</a>
+            <a href="#tab_03" class="services__tabs-item">Кредит</a>
+          </nav>
 
-        <div class="services-tabs">
-          <div id="tab_01" class="services-tabs__block">
-            <h2 class="services-tabs__title">Доставка</h2>
-            <p class="services-tabs__text">Мы с удовольствием доставим ваш товар прямо
-              к вашему подъезду совершенно бесплатно!
-              Ведь мы неплохо заработаем
-              поднимая его на ваш этаж!
-            </p>
-            <img class="services-tabs__img" src="img/backgrounds/delivery.png" alt="Серого цвета грузовик с крытым синим кузовом" width="468" height="261">
-          </div>
+          <div class="services-tabs " >
+            <div id="tab_01" class="services-tabs__block">
+              <h2 class="services-tabs__title">Доставка</h2>
+              <p class="services-tabs__text">Мы с удовольствием доставим ваш товар прямо
+                к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем
+                поднимая его на ваш этаж!
+              </p>
+              <img class="services-tabs__img" src="img/backgrounds/delivery.png" alt="Серого цвета грузовик с крытым синим кузовом" width="468" height="261">
+            </div>
 
-          <div id="tab_02" class="services-tabs__block">
-            <h2 class="services-tabs__title">Гарантия</h2>
-            <p class="services-tabs__text">Если купленый у нас товар поломается или заискрит,
-              а так же в случае пожара,спровоцированного его
-              возгоранием, вы всегда можети быть уверены в нашей
-              гарантии. Мы обменяем сгоревший товар на новый.
-              Дом уж восстановите как-нибудь сами.
-            </p>
-            <img class="services-tabs__img" src="img/backgrounds/guarantee.png" alt="Золотая медаль с красными лентами,гравировка -100%" width="389" height="283">
-          </div>
+            <div id="tab_02" class="services-tabs__block">
+              <h2 class="services-tabs__title">Гарантия</h2>
+              <p class="services-tabs__text">Если купленый у нас товар поломается или заискрит,
+                а так же в случае пожара,спровоцированного его
+                возгоранием, вы всегда можети быть уверены в нашей
+                гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.
+              </p>
+              <img class="services-tabs__img" src="img/backgrounds/guarantee.png" alt="Золотая медаль с красными лентами,гравировка -100%" width="389" height="283">
+            </div>
 
-          <div id="tab_03" class="services-tabs__block">
-            <h2 class="services-tabs__title">Кредит</h2>
-            <p class="services-tabs__text">Залезть в долговую яму стало проще!
-              Кредитные консультанты придут вам на помощь.
-            </p>
-            <a class="services-tabs__link" href="">Отправить заявку</a>
-
-            <img class="services-tabs__img" src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
+            <div id="tab_03" class="services-tabs__block services--credit">
+              <h2 class="services-tabs__title">Кредит</h2>
+              <p class="services-tabs__text">Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="services-tabs__link" href="">Отправить заявку</a>
+              <img class="services-tabs__img services-img--credit" src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
+            </div>
           </div>
         </div>
       </section>
 
       <section class="company-info">
-        <div class="wrapper-company">
+        <div class="wrapper">
           <div class="company-info__block">
             <h2 class="company-info__title">Компания &laquo;Техномарт&raquo;</h2>
             <p class="company-info__slogan">Настоящий мужской шоппинг начинаеться здесь!Огромый выбор товаров для
               ремонта и строительства не оставит равнодушными любителей сэкономить на
               гастробайтерах.
+            </p>
+            <p>Мы можем доставить ваш товар  в самые отдалёные точки России!
+            Техномарт работает со многими транспортными крмпаниями:
             </p>
 
             <ul class="company-info__list">
@@ -400,7 +386,7 @@
         </div>
       </section>
 
-      <section class="feedback">
+      <section class="feedback visually-hidden">
         <h2 class="feedback__title visually-hidden">Форма обратной связи</h2>
         <form class="form-feedback" action="#" method="post">
           <p class="form-feedback__block">
