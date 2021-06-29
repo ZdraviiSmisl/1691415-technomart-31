@@ -10,9 +10,10 @@
     <link crossorigin="use-credentials" rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page__body page__body--index">
     <header class="main-header">
       <div class="main-header__top">
         <div class="wrapper">
@@ -92,45 +93,37 @@
     <main class="main-index">
       <h1 class="main-index__title visually-hidden">Интеренет магазин Техномарт</h1>
 
-      <section class="menu">
+      <section class="menu page__menu">
         <div class="wrapper">
           <h2 class="visually-hidden">Меню</h2>
 
           <ul class="menu__list">
 
-            <li class="menu__item">
-              <p class="menu__materials">
+            <li class="menu__item menu__item--materials menu__item--new" >
               <h3 class="menu__title">Материалы</h3>
               <a class="menu__link" href="#">На любой вкус</a>
-              </p>
             </li>
 
-            <li class="menu__item">
-              <p class="menu__tools">
+            <li class="menu__item menu__item--instruments">
                 <h3 class="menu__title">Инструменты</h3>
                 <a class="menu__link" href="#">На все случаи</a>
-              </p>
             </li>
 
-            <li class="menu__item">
-              <p class="menu__technics">
+            <li class="menu__item menu__item--technique">
                 <h3 class="menu__title">Техника</h3>
                 <a class="menu__link" href="#">Для стройки</a>
-              </p>
+
             </li>
 
-            <li class="menu__item">
-              <p class="menu__discounts">
-                <h3 class="menu__title">Скидки 50%</h3>
+            <li class="menu__item menu__item--discounts">
+                <h3 class="menu__title ">Скидки 50%</h3>
                 <a class="menu__link" href="#">На 350 товаров</a>
-              </p>
             </li>
 
-            <li class="menu__item">
-              <p class="menu__delivery">
-                <h3 class="menu__title">Доставка</h3>
+            <li class="menu__item menu__item--delivery">
+                <h3 class="menu__title ">Доставка</h3>
                 <a class="menu__link" href="#">Бесплатно</a>
-              </p>
+
             </li>
           </ul>
           <div class="slider">
@@ -149,13 +142,15 @@
         </div>
       </section>
 
-      <section class="goods">
+      <section class="goods page__goods">
         <div class="wrapper">
-          <h2 class="goods__title">Популярные товары:</h2>
-          <a class="goods__link" href="#">Все популярные товары</a>
+          <div class="goods__intro" >
+            <h2 class="goods__title">Популярные товары:</h2>
+            <a class="goods__link" href="#">Все популярные товары</a>
+          </div>
           <ul class="goods__list">
             <li class="goods__item">
-              <article class="card-good__card">
+              <article class="card-good__card ">
                 <a class="card-good__link" href="#">
                   <img class="card-good__img" src="img/goods/bfg-9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="144" height="128">
                 </a>
@@ -172,8 +167,8 @@
               </article>
             </li>
 
-            <li class="goods__item">
-              <article class="card-good__card">
+            <li class="goods__item card-good--new">
+              <article class="card-good__card ">
                 <a class="card-good__link" href="#">
                   <img class="card-good__img" src="img/goods/bfg-3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
                        width="127" height="112">
@@ -202,7 +197,7 @@
               </article>
             </li>
 
-            <li class="goods__item">
+            <li class="goods__item card-good--new">
               <article class="card-good__card">
                 <a class="card-good__link" href="#">
                   <img class="card-good__img" src="img/goods/bfg-2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
@@ -221,88 +216,74 @@
       </section>
 
 
-      <section class="brands">
+      <section class="brands page__brands">
         <div class="wrapper">
+          <div class="brands__intro">
           <h2 class="brands__title">Популярные производители:</h2>
           <a class="brands__link" href="#">Все производители</a>
+          </div>
           <ul class="brands__list">
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Bosch</h3>
                 <a class="card-brand__link" href="#" style="width: 200px;height: 90px">
                   <img class="card-brand__img"  src="img/brands/bosch.png" alt=" логотип Bosch,красные буквы на сером фоне" width="126" height="37">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Makita</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/makita.png" alt="логотип Makita белые буквы на красном фоне" width="123" height="40">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Dewalt</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/dewalt.png" alt="логотип Dewalt жёлтые буквы на чёрном фоне" width="146"  height="44">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Интерскол</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/Interscol.png" alt="логотип Интерскол красные буквы на белом фоне" width="200" height="76">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Hitachi</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/hitachi.png" alt="логотип Hitachi красные буквы на белом фоне" width="169" height="31">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Lg</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/lg.png" alt="логотип Lg" width="121" height="73">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Aeg</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/aeg.png" alt="логотип Aeg" width="151" height="98">
                 </a>
-              </article>
             </li>
 
             <li class="brands__item">
-              <article class="card-brand">
                 <h3 class="visually-hidden">Metabo</h3>
                 <a class="card-brand__link" href="#">
                   <img class="card-brand__img" src="img/brands/metabo.png" alt="логотип Metabo" width="206" height="73">
                 </a>
-              </article>
             </li>
           </ul>
         </div>
       </section>
 
 
-      <section class="services">
+      <section class="services page__services">
         <div class="wrapper">
           <h2 class="services__title">Сервисы</h2>
 
@@ -345,13 +326,13 @@
                 Кредитные консультанты придут вам на помощь.
               </p>
               <a class="services-tabs__link" href="">Отправить заявку</a>
-              <img class="services-tabs__img services-img--credit" src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
+              <img class="services-tabs__img " src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
             </div>
           </div>
         </div>
       </section>
 
-      <section class="company-info">
+      <section class="company-info page__company-info">
         <div class="wrapper">
           <div class="company-info__block">
             <h2 class="company-info__title">Компания &laquo;Техномарт&raquo;</h2>
