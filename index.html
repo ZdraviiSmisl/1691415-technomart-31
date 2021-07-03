@@ -30,11 +30,11 @@
           </form>
 
             <p class="main-header__menu-item">
-              <a class="main-header__bookmarks-link main-header__link--top" href="#">Закладки</a>
+              <a class="main-header__bookmarks-link main-header__link--top" href="#">Закладки: 0</a>
             </p>
 
             <p class="main-header__menu-item">
-              <a class="main-header__basket-link main-header__link--top" href="#">Корзина</a>
+              <a class="main-header__basket-link main-header__link--top" href="#">Корзина: 0</a>
             </p>
 
             <p class="main-header__menu-item">
@@ -125,20 +125,31 @@
                 <a class="menu__link" href="#">Бесплатно</a>
 
             </li>
-          </ul>
-          <div class="slider">
-            <div class=" slider__slide slider__slide--1">
-              <h3 class="slider__title">Перфораторы</h3>
-              <p class="slider__text">Настоящие мужские игрушки</p>
-              <a class="slider__link" href="catalog.html">Открыть каталог</a>
-            </div>
+            <li class="menu__item menu__item--slider" >
+              <div class="slider">
+                <input type="radio" id="slide-1" name="slider" checked>
+                <input type="radio" id="slide-2" name="slider" >
 
-            <div class=" slider__slide slider__slide--2 ">
-              <h3 class="slider__title">Дрели</h3>
-              <p class="slider__text">Соседям на радость!</p>
-              <a class="slider__link" href="catalog.html">Открыть каталог </a>
-            </div>
-          </div>
+                <div class="slider__slides">
+                  <div class=" slider__slide slider__slide--1">
+                    <label class="label label--prev" for="slide-2" ></label>
+                      <h3 class="slider__title">Перфораторы</h3>
+                      <p class="slider__text">Настоящие мужские игрушки</p>
+                      <a class="slider__link" href="catalog.html">Открыть каталог</a>
+                    <label class="label label--next" for="slide-2"></label>
+                  </div>
+
+                  <div class=" slider__slide slider__slide--2 ">
+                    <label class="label label--prev" for="slide-1" ></label>
+                      <h3 class="slider__title">Дрели</h3>
+                      <p class="slider__text">Соседям на радость!</p>
+                      <a class="slider__link" href="catalog.html">Открыть каталог </a>
+                    <label class="label label--next" for="slide-1"></label>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -154,12 +165,12 @@
                 <a class="card-good__link" href="#">
                   <img class="card-good__img" src="img/goods/bfg-9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="144" height="128">
                 </a>
-                <div class="visually-hidden">
+                <div class="card-good__actions-popup ">
                   <a class="card-good__buy" href="#" >Купить</a>
                   <a class="card-good__in-bookmark" href="#">В Закладки</a>
                 </div>
                 <h3 class="card-good__titleGood">Перфоратор Bosch
-                  bfg 9000</h3>
+                  BFG 9000</h3>
                <p class='card-good__price'>32500р.<span class="visually-hidden">рублей</span></p>
                 <a class="card-good__link-bay" href="#">
                   25500р.<span class="visually-hidden">рублей</span>
@@ -173,11 +184,15 @@
                   <img class="card-good__img" src="img/goods/bfg-3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
                        width="127" height="112">
                 </a>
-                <h3 class="card-good__title">Перфоратор bosch
-                  bfg 3000</h3>
+                <div class=" card-good__actions-popup ">
+                  <a class="card-good__buy" href="#" >Купить</a>
+                  <a class="card-good__in-bookmark" href="#">В Закладки</a>
+                </div>
+                <h3 class="card-good__title">Перфоратор Bosch
+                  BFG 3000</h3>
                  <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
                 <a class="card-good__link-bay">
-                  15500р.<span class="visually-hidden">рублей</span>
+                  15500р.<span  class="visually-hidden">рублей</span>
                 </a>
               </article>
             </li>
@@ -188,8 +203,12 @@
                   <img class="card-good__img" src="img/goods/bfg-6000.jpg" alt="Перфоратор Bosch bfg 6000,синий,беспроводной"
                        width="144" height="128">
                 </a>
+                <div class=" card-good__actions-popup ">
+                  <a class="card-good__buy" href="#" >Купить</a>
+                  <a class="card-good__in-bookmark" href="#">В Закладки</a>
+                </div>
                 <h3 class="card-good__title">Перфоратор Bosch
-                  bfg 6000</h3>
+                  BFG 6000</h3>
                  <p class='card-good__price'>30500р.<span class="visually-hidden">рублей</span></p>
                 <a class="card-good__link-bay" href="#">
                   22500р.<span class="visually-hidden">рублей</span>
@@ -203,8 +222,12 @@
                   <img class="card-good__img" src="img/goods/bfg-2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
                        width="127" height="112">
                 </a>
+                <div class=" card-good__actions-popup ">
+                  <a class="card-good__buy" href="#" >Купить</a>
+                  <a class="card-good__in-bookmark" href="#">В Закладки</a>
+                </div>
                 <h3 class="card-good__title">Перфоратор Bosch
-                  bfg 2000</h3>
+                  BFG 2000</h3>
                  <p class='card-good__price'>22500р.<span class="visually-hidden">рублей</span></p>
                 <a class="card-good__link-bay" href="#">
                   12500р.<span class="visually-hidden">рублей</span>
@@ -291,42 +314,53 @@
           Мы стараемся изо всех сил,чтобы сделать ваши покупки приятными.
           </p>
 
+          <div class="services-slider">
 
-          <nav class="services__tabs">
-            <a href="#tab_01" class="services__tabs-item">Доставка</a>
-            <a href="#tab_02" class="services__tabs-item">Гарантия</a>
-            <a href="#tab_03" class="services__tabs-item">Кредит</a>
-          </nav>
+            <ul class="services-slider__control">
 
-          <div class="services-tabs " >
-            <div id="tab_01" class="services-tabs__block">
-              <h2 class="services-tabs__title">Доставка</h2>
-              <p class="services-tabs__text">Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем
-                поднимая его на ваш этаж!
-              </p>
-              <img class="services-tabs__img" src="img/backgrounds/delivery.png" alt="Серого цвета грузовик с крытым синим кузовом" width="468" height="261">
-            </div>
+              <li class="services-slider__item">
+                <a href="#tab_01"  class="services-slider__link">Доставка</a>
+              </li>
+              <li class="services-slider__item">
+                <a href="#tab_02"  class="services-slider__link">Гарантия</a>
+              </li>
+              <li class="services-slider__item">
+                <a href="#tab_03" class="services-slider__link">Кредит</a>
+              </li>
+            <!--<input type="button" id="services__slide-1" value="Доставка">
+            <input type="button" id="services__slide-2" value="Гарантия">
+            <input type="button" id="services__slide-3" value="Кредит">
+&lt;!&ndash;-->
+            </ul>
 
-            <div id="tab_02" class="services-tabs__block">
-              <h2 class="services-tabs__title">Гарантия</h2>
-              <p class="services-tabs__text">Если купленый у нас товар поломается или заискрит,
-                а так же в случае пожара,спровоцированного его
-                возгоранием, вы всегда можети быть уверены в нашей
-                гарантии. Мы обменяем сгоревший товар на новый.
-                Дом уж восстановите как-нибудь сами.
-              </p>
-              <img class="services-tabs__img" src="img/backgrounds/guarantee.png" alt="Золотая медаль с красными лентами,гравировка -100%" width="389" height="283">
-            </div>
 
-            <div id="tab_03" class="services-tabs__block services--credit">
-              <h2 class="services-tabs__title">Кредит</h2>
-              <p class="services-tabs__text">Залезть в долговую яму стало проще!
-                Кредитные консультанты придут вам на помощь.
-              </p>
-              <a class="services-tabs__link" href="">Отправить заявку</a>
-              <img class="services-tabs__img " src="img/backgrounds/credit.png" alt="купюры и монеты на фоне кредитного договора" width="465" height="285">
+            <div class="services-slider__slides " >
+              <div id="tab_01" class="services-slider__slide services-slider__slide--1">
+                <h2 class="services-slider__title">Доставка</h2>
+                <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем
+                  поднимая его на ваш этаж!
+                </p>
+              </div>
+
+              <div id="tab_02" class="services-slider__slide services-slider__slide--2">
+                <h2 class="services-slider__title">Гарантия</h2>
+                <p class="services-slider__text">Если купленый у нас товар поломается или заискрит,
+                  а так же в случае пожара,спровоцированного его
+                  возгоранием, вы всегда можети быть уверены в нашей
+                  гарантии. Мы обменяем сгоревший товар на новый.
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </div>
+
+              <div id="tab_03" class="services-slider__slide services-slider__slide--3">
+                <h2 class="services-slider__title">Кредит</h2>
+                <p class="services-slider__text">Залезть в долговую яму стало проще!
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class="services-slider__credit-link" href="">Отправить заявку</a>
+              </div>
             </div>
           </div>
         </div>
@@ -361,7 +395,7 @@
             <a class="company-info__link" href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5p/Z0kYdQZnSkAOQFtjfXV3eX9hZg==/inside/?ll=30.317359%2C59.968322&tab=inside&z=16.31">
               <img class="company-info__img" src="img/map/map.png" alt="местоположение магазина на карте" width="300" height="158">
             </a>
-            <a class="company-info__btn" href="#">Заблудились?Напишите нам!</a>
+            <a class="company-info__btn" href="#">Заблудились? Напишите нам!</a>
 
           </div>
         </div>
@@ -416,7 +450,7 @@
               <a class="menu-top__link" href="#">Новости</a>
             </li>
             <li class="menu-top__item">
-              <a class="menu-top__link">Каталог</a>
+              <a href="catalog.html" class="menu-top__link">Каталог</a>
             </li>
             <li class="menu-top__item">
               <a class="menu-top__link" href="#">Доставка</a>
@@ -450,11 +484,17 @@
             <span class="main-footer__copyright-text"> Все права защищены</span>
           </p>
 
-          <div class="main-footer__socials">
-            <a class="main-footer__social-link" href="https://vk.com/htmlacademy">Вконтакте</a>
-            <a class="main-footer__social-link" href="https://facebook.com/htmlacademy"> Фейсбук</a>
-            <a class="main-footer__social-link" href="https://instagram.com/htmlacademy">Инстраграмм</a>
-          </div>
+          <ul class="main-footer__socials">
+            <li>
+              <a class="main-footer__vk-link " href="https://vk.com/htmlacademy"></a>
+            </li>
+            <li>
+              <a class="main-footer__fb-link " href="https://facebook.com/htmlacademy"></a>
+            </li>
+            <li>
+              <a class="main-footer__insta-link " href="https://instagram.com/htmlacademy"></a>
+            </li>
+          </ul>
 
           <p class="main-footer__feedback">
             <span class="main-footer__feedback-text"> Обратная связь:</span>
