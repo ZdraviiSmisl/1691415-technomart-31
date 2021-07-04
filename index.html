@@ -401,28 +401,43 @@
         </div>
       </section>
 
-      <section class="feedback visually-hidden">
+
+      <section class="modal modal-feedback ">
         <h2 class="feedback__title visually-hidden">Форма обратной связи</h2>
+
         <form class="form-feedback" action="#" method="post">
-          <p class="form-feedback__block">
-            <label  for="userName">Ваше имя:</label>
-            <input class="form-feedback__name-input" type="text" id="userName" name="fullName" placeholder="Имя Фамилия">
-          </p>
+          <div class="form-feedback__footer"></div>
+          <div class="modal-wrapper">
+            <p class="form-feedback__block">
+              <label  for="userName">Ваше имя:</label>
+              <input class="form-feedback__name-input" type="text" id="userName" name="fullName" placeholder="Имя Фамилия">
+            </p>
 
-          <p class="form-feedback__block">
-            <label  for="e-mail">Ваш e-mail:</label>
-            <input class="form-feedback__email-input" type="email" id="e-mail" name="e_mail" placeholder="email@example.com">
-          </p>
+            <p class="form-feedback__block">
+              <label  for="e-mail">Ваш e-mail:</label>
+              <input class="form-feedback__email-input" type="email" id="e-mail" name="e_mail" placeholder="email@example.com">
+            </p>
 
-          <p class="form-feedback__block">
-            <label for="comment">Текст Письма:</label>
-            <textarea class="form-feedback__text" name="form-feedback" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-          </p>
+            <p class="form-feedback__block">
+              <label for="comment">Текст Письма:</label>
+              <textarea class="form-feedback__text" name="form-feedback" id="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
           <div class="form-feedback__button-block">
             <a class="form-feedback__link-submit" href="#">Отправить</a>
-            <button class="form-feedback__button-close visually-hidden" type="button">Закрыть</button>
           </div>
         </form>
+        <button class="form-feedback__modal-close " type="button" aria-label="Закрыть"></button>
+
+      </section>
+      <section class="modal modal-map">
+        <div class="map__footer"></div>
+
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="980" height="488" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
+        <img src="img/backgrounds/map_popup.png" width="980" height="488px" alt="Офис компании по адресу набережная реки Карповки,5,литера П,Санкт-Питкербург">
+        <button class="modal-map__modal-close " type="button" aria-label="Закрыть"></button>
+
       </section>
     </main>
 
@@ -508,5 +523,7 @@
         </div>
       </div>
     </footer>
+    <script src="address.js"></script>
+    <script src="feedbackPopup.js"></script>
   </body>
 </html>
