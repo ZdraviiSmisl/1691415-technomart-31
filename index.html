@@ -26,10 +26,10 @@
 
           <form class="main-header__search-form" action="#" method="get">
             <label for="search" class="visually-hidden">Поиск:</label>
-           <!-- <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
-            </svg>-->
             <input class="main-header__search-input"  id='search' type="search" name="search" placeholder="Поиск:">
+            <svg class="main-header__search-icon" width="17" height="17" viewBox="0 0 17 17"  xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" fill="white"/>
+            </svg>
           </form>
 
             <p class="main-header__menu-item">
@@ -166,7 +166,7 @@
             <li class="goods__item">
               <article class="card-good__card ">
                 <a class="card-good__link" href="#">
-                  <img class="card-good__img" src="img/goods/bfg-9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="144" height="128">
+                  <img class="card-good__img" src="img/goods/9000.jpg" alt="Мощный,проводной перфоратор синего цвета с возможностью использования длинных свёрел" width="229" height="179">
                 </a>
                 <div class="card-good__actions-popup ">
                   <a class="card-good__buy" href="#" >Купить</a>
@@ -184,8 +184,8 @@
             <li class="goods__item card-good--new">
               <article class="card-good__card ">
                 <a class="card-good__link" href="#">
-                  <img class="card-good__img" src="img/goods/bfg-3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
-                       width="127" height="112">
+                  <img class="card-good__img" src="img/goods/3000.jpg" alt="Перфоратор Bosch bfg 3000,синий,беспроводной"
+                       width="218" height="177">
                 </a>
                 <div class=" card-good__actions-popup ">
                   <a class="card-good__buy" href="#" >Купить</a>
@@ -203,8 +203,8 @@
             <li class="goods__item">
               <article class="card-good__card">
                 <a class="card-good__link" href="#">
-                  <img class="card-good__img" src="img/goods/bfg-6000.jpg" alt="Перфоратор Bosch bfg 6000,синий,беспроводной"
-                       width="144" height="128">
+                  <img class="card-good__img" src="img/goods/6000.jpg" alt="Перфоратор Bosch bfg 6000,синий,беспроводной"
+                       width="219" height="177">
                 </a>
                 <div class=" card-good__actions-popup ">
                   <a class="card-good__buy" href="#" >Купить</a>
@@ -222,8 +222,8 @@
             <li class="goods__item card-good--new">
               <article class="card-good__card">
                 <a class="card-good__link" href="#">
-                  <img class="card-good__img" src="img/goods/bfg-2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
-                       width="127" height="112">
+                  <img class="card-good__img" src="img/goods/2000.jpg" alt="Перфоратор Bosch bfg 2000,синий,беспроводной"
+                       width="218" height="179">
                 </a>
                 <div class=" card-good__actions-popup ">
                   <a class="card-good__buy" href="#" >Купить</a>
@@ -308,7 +308,6 @@
         </div>
       </section>
 
-
       <section class="services page__services">
         <div class="wrapper">
           <h2 class="services__title">Сервисы</h2>
@@ -318,27 +317,18 @@
           </p>
 
           <div class="services-slider">
+            <div class="services-slider__toggles">
+              <label class="services-slider__toggle" for="services__slide-1">Доставка</label>
+              <label class="services-slider__toggle" for="services__slide-2">Гарантия</label>
+              <label class="services-slider__toggle" for="services__slide-3">Кредит</label>
+            </div>
 
-            <ul class="services-slider__control">
-
-              <li class="services-slider__item">
-                <a href="#tab_01"  class="services-slider__link">Доставка</a>
-              </li>
-              <li class="services-slider__item">
-                <a href="#tab_02"  class="services-slider__link">Гарантия</a>
-              </li>
-              <li class="services-slider__item">
-                <a href="#tab_03" class="services-slider__link">Кредит</a>
-              </li>
-            <!--<input type="button" id="services__slide-1" value="Доставка">
-            <input type="button" id="services__slide-2" value="Гарантия">
-            <input type="button" id="services__slide-3" value="Кредит">
-&lt;!&ndash;-->
-            </ul>
-
+            <input class="services-slider__input" type="radio" name="slide" id="services__slide-1" checked>
+            <input class="services-slider__input" type="radio" name="slide" id="services__slide-2">
+            <input class="services-slider__input" type="radio" name="slide" id="services__slide-3">
 
             <div class="services-slider__slides " >
-              <div id="tab_01" class="services-slider__slide services-slider__slide--1">
+              <div  class="services-slider__slide services-slider__slide--1">
                 <h2 class="services-slider__title">Доставка</h2>
                 <p class="services-slider__text">Мы с удовольствием доставим ваш товар прямо
                   к вашему подъезду совершенно бесплатно!
@@ -347,7 +337,7 @@
                 </p>
               </div>
 
-              <div id="tab_02" class="services-slider__slide services-slider__slide--2">
+              <div  class="services-slider__slide services-slider__slide--2 ">
                 <h2 class="services-slider__title">Гарантия</h2>
                 <p class="services-slider__text">Если купленый у нас товар поломается или заискрит,
                   а так же в случае пожара,спровоцированного его
@@ -357,7 +347,7 @@
                 </p>
               </div>
 
-              <div id="tab_03" class="services-slider__slide services-slider__slide--3">
+              <div  class="services-slider__slide services-slider__slide--3 ">
                 <h2 class="services-slider__title">Кредит</h2>
                 <p class="services-slider__text">Залезть в долговую яму стало проще!
                   Кредитные консультанты придут вам на помощь.
@@ -404,12 +394,10 @@
         </div>
       </section>
 
-
       <section class="modal modal-feedback ">
         <h2 class="feedback__title visually-hidden">Форма обратной связи</h2>
 
         <form class="form-feedback" action="#" method="post">
-          <div class="form-feedback__footer"></div>
           <div class="modal-wrapper">
             <p class="form-feedback__block">
               <label  for="userName">Ваше имя:</label>
@@ -434,16 +422,37 @@
 
       </section>
       <section class="modal modal-map">
-        <div class="map__footer"></div>
 
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1996.8226084186758!2d30.315214851237876!3d59.96826598179804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0x5f2ac55f567b2400!2sHTML%20Academy!5e0!3m2!1sru!2sru!4v1625481767374!5m2!1sru!2sru" width="980" height="488" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe>
-<!--
-        <img src="img/backgrounds/map_popup.png" width="980" height="488" alt="Офис компании по адресу набережная реки Карповки,5,литера П,Санкт-Питкербург">
--->
+
         <button class="modal-map__modal-close" type="button" aria-label="Закрыть"></button>
 
       </section>
+      <section class="modal modal-basket ">
+        <div class="modal-basket__wrapper">
+          <h2 class="modal-basket__title visually-hidden">Добавление товара</h2>
+            <p class="modal-basket__added">
+              <svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M33 66C51.2254 66 66 51.2254 66 33C66 14.7746 51.2254 0 33 0C14.7746 0 0 14.7746 0 33C0 51.2254 14.7746 66 33 66Z"
+                  fill="#63A63E"/>
+                <path
+                  d="M48.6476 19.2916C48.2564 18.9028 47.6247 18.9028 47.2336 19.2916L28.7946 37.7296C28.4034 38.1183 27.7717 38.1183 27.3806 37.7296L19.2406 29.5906C18.8494 29.2018 18.2177 29.2018 17.8266 29.5906L14.2916 33.1256C13.9028 33.5167 13.9028 34.1484 14.2916 34.5396L27.3806 47.6296C27.7717 48.0183 28.4034 48.0183 28.7946 47.6296L32.3306 44.0936L33.7446 42.6796L52.1826 24.2416C52.5713 23.8504 52.5713 23.2187 52.1826 22.8276L48.6476 19.2916Z"
+                  fill="white"/>
+              </svg>
+              <span class="modal-basket__text">Товар добавлен в корзину!</span>
+            </p>
+
+            <p class="modal-basket__order">
+              <a class="modal-basket__order-link" href="#">Оформить заказ</a>
+              <a class="modal-basket__continue" href="#">Продрожить покупки</a>
+            </p>
+
+            <button class="modal-basket__close" type="button" aria-label="Закрыть" ></button>
+        </div>
+      </section>
+
     </main>
 
 
@@ -530,5 +539,6 @@
     </footer>
     <script src="address.js"></script>
     <script src="feedbackPopup.js"></script>
+    <script src="basketPopup.js"></script>
   </body>
 </html>
