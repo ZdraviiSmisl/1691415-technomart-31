@@ -2540,8 +2540,13 @@ article .product-card__link-bay {
 
 
 .description__text {
+
   margin: 0;
-padding: 0 35px 0 0;
+  padding: 0 35px 0 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+
 }
 
 .description__title {
