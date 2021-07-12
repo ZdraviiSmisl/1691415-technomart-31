@@ -1612,7 +1612,12 @@ p .main-header__contacts-link::before {
 
 .modal-show {
   display: block;
+  animation: bounce 0.6s;
 
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 /*
@@ -1786,7 +1791,7 @@ feedback
 
 /*modal map*/
 .modal-map {
-  width: 943px;
+  width: 980px;
   height: 449px;
 
   border-top: 7px solid var(--basic-red);
@@ -2604,6 +2609,8 @@ opacity: 0.3}
   background-color: var(--basic-white);
 
   border: 1px solid var(--wisper2);
+
+  cursor: pointer;
 }
 
 
@@ -2786,3 +2793,46 @@ article .product-card__link-bay {
 
 }
 
+
+/*
+Animation*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
