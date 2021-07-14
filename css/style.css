@@ -442,6 +442,7 @@ p .main-header__contacts-link::before {
   display: inline-block;
   margin-bottom: 3px;
   padding: 7px 50px 8px 74px;
+  vertical-align: center;
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
@@ -606,7 +607,7 @@ p .main-header__contacts-link::before {
 }
 
 .main-header__user-name {
-  display: inline-block;
+  display: block;
   width: auto;
   padding: 12px 57px 12px 56px;
   background-color: var(--basic-white);
@@ -799,7 +800,7 @@ p .main-header__contacts-link::before {
 .menu__item a {
   margin-bottom: 21px;
 
-  display: inline-block;
+  display: block;
 
   padding: 10px 26px 10px 26px;
   font: inherit;
@@ -865,7 +866,6 @@ p .main-header__contacts-link::before {
 
   background-image: url('../img/goods/perforators.jpg');
   background-repeat: no-repeat;
-
 }
 
 .slider__slide--2 {
@@ -903,10 +903,10 @@ p .main-header__contacts-link::before {
 .menu__item--slider .slider__link {
 
   display: inline-block;
-
   padding: 11px 46px 9px 46px;
 
   color: var(--basic-white);
+  vertical-align: center;
   text-transform: uppercase;
 
   background-color: var(--basic-red);
@@ -1046,12 +1046,12 @@ p .main-header__contacts-link::before {
   border: 1px solid var(--extra-light-grey);
 }
 
-.goods__item h3{
+.goods__item h3 {
   margin-bottom: -10px;
 }
 
 .card-good__card {
-display: flex;
+  display: flex;
   flex-flow: column;
   justify-content: space-evenly;
   align-items: center;
@@ -1178,7 +1178,6 @@ display: flex;
 }
 
 
-
 .card-good__price {
   display: block;
 
@@ -1195,8 +1194,8 @@ display: flex;
 
 
 .card-good__link-bay {
-width: 70px;
-  display: inline-block;
+  width: 70px;
+  display: block;
   margin-bottom: 21px;
   padding: 10px 54px 10px 32px;
   font-size: 17px;
@@ -1568,6 +1567,7 @@ width: 70px;
   font-size: 14px;
 
   color: var(--basic-white);
+  vertical-align: center;
 
   background-color: var(--basic-red);
 }
@@ -1587,7 +1587,7 @@ width: 70px;
 }
 
 .company-info__btn {
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   width: 300px;
   white-space: pre-line;
@@ -2796,10 +2796,12 @@ article .product-card__link-bay {
 .description__text {
 
   margin: 0;
-  padding: 0 35px 0 0;
+  padding: 0;
+
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+
 
 }
 

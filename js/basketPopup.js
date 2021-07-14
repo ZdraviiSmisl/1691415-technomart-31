@@ -11,10 +11,7 @@ cardGood.addEventListener('mouseover',function(evt){
   let toolTip=evt.target;
   console.log(toolTip);
 })
-/*linkInBuscket.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  modalBasket.classList.add('modal-show');
-});*/
+
 
 close.addEventListener('click', function (evt) {
   evt.preventDefault();
