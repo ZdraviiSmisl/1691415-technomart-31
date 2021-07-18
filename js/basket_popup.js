@@ -3,11 +3,6 @@ const cardGood=document.querySelectorAll(".card-good__card");
 const modalBasket = document.querySelector(".modal-basket");
 const close = document.querySelector(".modal-basket__close")
 
-cardGood.addEventListener("mouseover",function(evt){
-  let toolTip=evt.target;
-  console.log(toolTip);
-})
-
 
 close.addEventListener("click", function (evt) {
   evt.preventDefault();

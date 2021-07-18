@@ -1718,12 +1718,13 @@ feedback
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .modal-basket__added {
   display: flex;
-  flex-flow: row nowrap;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
+
 }
 
 
@@ -1739,6 +1740,7 @@ feedback
 }
 
 .modal-basket__text {
+  padding-top: 50px;
   position: relative;
   display: block;
   font-family: "Cuprum", Arial, sans-serif;
@@ -1753,7 +1755,7 @@ feedback
   position: absolute;
   width: 66px;
   height: 66px;
-  top: -20px;
+  top: 30px;
   left: -100px;
   background-image: url("../img/icons/success-add-basket.svg");
   background-repeat: no-repeat;
