@@ -47,6 +47,7 @@
   --special-black: rgba(0, 0, 0, 0.75);
   --some-grey: rgba(0, 0, 0, 0.0001);
   --some-grey2: rgba(41, 52, 73, 0.75);
+  --special-grey-transparent: rgba(169,169,169, 0.3);
 }
 
 .page {
@@ -69,10 +70,11 @@ body {
 }
 
 
-h2 {
+.global__style-titles {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .visually-hidden {
@@ -105,7 +107,7 @@ img {
   background-color: var(--basic-background);
 }
 
-.main-header__catalog{
+.main-header__catalog {
 margin-bottom: 35px;
 }
 
@@ -282,7 +284,7 @@ p .main-header__basket-link:active::before {
 }
 
 
-.main-header__order a:active {
+.main-header__order-link:active {
   color: var(--basic-white-transparent);
   background-color: var(--basic-green);
 }
@@ -308,7 +310,7 @@ p .main-header__basket-link:active::before {
 .main-header__bottom {
   font-size: 18px;
   color: var(--basic-blue);
-  background-color: #F1F5F7;
+  background-color: var(--basic-background)
 }
 
 .main-header__bottom .wrapper {
@@ -595,7 +597,7 @@ p .main-header__basket-link:active::before {
   margin-bottom: 32px;
 
 }
-.page__body--index .page__company-info{
+.page__body--index .page__company-info {
   margin-bottom: -4px;
 }
 
@@ -695,7 +697,7 @@ p .main-header__basket-link:active::before {
   font: inherit;
   color: var(--basic-white);
   vertical-align: center;
-  background-color: var(--special-white-transparent);
+  background-color: var(--basic-white-transparent);
 }
 
 
@@ -736,13 +738,11 @@ p .main-header__basket-link:active::before {
 }
 
 .menu__item a:hover {
-  background-color: var(--basic-extra-grey2);
-  opacity: 30%;
+  background-color: var(--special-white-transparent);
 }
 
 .menu__item a:active {
-  background-color: var(--basic-dark-grey);
-  opacity: 30%;
+  background-color: var(--special-grey-transparent);
 }
 
 
@@ -1350,8 +1350,8 @@ p .main-header__basket-link:active::before {
   font-family: "Cuprum", Arial, sans-serif;
   text-transform: uppercase;
 }
-.company-info__contacts-title{
-  font-weight: 400  ;
+.company-info__contacts-title .global__style-titles {
+  font-weight: 400;
 }
 
 .company-info__list {
@@ -1784,7 +1784,7 @@ feedback
 
 
 
-.main-footer__logo-link{
+.main-footer__logo-link {
   display: block;
 }
 
@@ -1812,7 +1812,7 @@ feedback
   justify-content: space-between;
 }
 
-.menu-top li:not(:last-child){
+.menu-top li:not(:last-child) {
   margin-right: 45px;
 
 }
@@ -1855,6 +1855,7 @@ feedback
 
 .menu-top__link:active, .menu-bottom__link:active {
   opacity: 50%;
+  text-decoration: none;
 }
 
 
@@ -1880,14 +1881,14 @@ feedback
   display: flex;
   align-items: center;
 }
-.main-footer__feedback,.main-footer__development{
+.main-footer__feedback,.main-footer__development {
   white-space: pre-line;
 }
-.main-footer__feedback{
+.main-footer__feedback {
   margin-right: 50px;
 }
 
-.main-footer__copyright{
+.main-footer__copyright {
   margin-right: 165px;
   white-space: pre-line;
 }
@@ -1961,6 +1962,7 @@ feedback
 }
 
 .main-footer__development-link:active, .main-footer__feedback-mail:active {
+  text-decoration: none;
   color: var(--basic-red);
 }
 
@@ -2186,7 +2188,7 @@ feedback
 .filter {
   width: 220px;
 }
-.form-filter__legend:nth-last-of-type(1){
+.form-filter__legend:nth-last-of-type(1) {
   display: block;
 }
 
@@ -2239,11 +2241,13 @@ legend:first-child {
   background-image: url("../img/icons/checkbox-off.png");
 }
 
-.input-checkbox:not(:checked):hover + label::before {
+/*.input-checkbox:not(:checked):hover + label::before {
   background-image: url("../img/icons/checkbox-off-hover.png");
+}*/
+.input-checkbox:disabled + label {
+  opacity: 0.3;
 }
-
-.input-checkbox:not(:checked):disabled + label::before {
+.input-checkbox:disabled + label::before {
   background-image: url("../img/icons/checkbox-off-desabled.png");
 }
 
@@ -2448,19 +2452,19 @@ legend:first-child {
   margin-right: 0;
 }
 
-.products__item:nth-child(n+4):nth-child(-n+6){
+.products__item:nth-child(n+4):nth-child(-n+6) {
   margin-bottom: -5px;
 }
 
-.products__item:nth-child(n+4):nth-child(-n+6) h3{
+.products__item:nth-child(n+4):nth-child(-n+6) h3 {
   margin-bottom: -10px;
 }
 
-.products__item:nth-child(n+7){
+.products__item:nth-child(n+7) {
   margin-right: -2px;
 }
 
-.products__item:nth-child(n+7) h3{
+.products__item:nth-child(n+7) h3 {
   margin-bottom:-15px;
 
 }
@@ -2487,7 +2491,7 @@ legend:first-child {
 }
 
 
-article p {
+article .card-good__price {
   color: var(--basic-dark-grey);
   font-size: 17px;
   line-height: 18px;
